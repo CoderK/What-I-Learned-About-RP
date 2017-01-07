@@ -80,8 +80,8 @@
     * Andre Staltz와 Erik Meijer 그리고 Conal Eliott가 토론을 벌임.
     * FRP에 대한 각자의 생각을 읽을 수 있음.
 * [Clarify the differences between Functional Reactive Programming and Reactive Extensions](https://github.com/ReactiveX/reactivex.github.io/issues/130)
-    * Rx와 FRP의 차이를 묻는 질문으로 에릭 마이어의 코멘트를 통해 FRP에 대한 에릭 마이어릐 생각을 읽을 수 있음. 
-    * 에릭 마이어는, FRP와 Rx는 다르다는 걸 인정. FRP를 만든 Conal의 생각을 존중하며, Rx를 이용해서 현실의 문제를 해결할 수 있다면 용어는 중요하지 않다고 말함
+	- Rx와 FRP의 차이를 묻는 질문으로 에릭 마이어의 코멘트를 통해 FRP에 대한 에릭 마이어릐 생각을 읽을 수 있음. 
+	- 에릭 마이어는, FRP와 Rx는 다르다는 걸 인정. FRP를 만든 Conal의 생각을 존중하며, Rx를 이용해서 현실의 문제를 해결할 수 있다면 용어는 중요하지 않다고 말함
 
 ## 결론
 
