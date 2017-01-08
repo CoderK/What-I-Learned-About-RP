@@ -2,23 +2,34 @@
 
 김코딩이 학습한 기록이나 흔적을 남기는 저장소.
 
+### 인덱스
+
+1. [설계](#설계)
+	- [설계 일반](#설계 일반)
+2. [Rx와 리액티브 프로그래밍](#Rx와 리액티브 프로그래밍)
+	- [리액티브 프로그래밍](#리액티브 프로그래밍)
+	- [Rx(ReactiveX)](#Rx(ReactiveX))
+	- [RxJS](#RxJS)
+	- [FRP](#FRP)
+	- [Rx vs FRP](#Rx vs FRP)
+	- [김코딩 정리](#김코딩 정리)
+
+
 # 1. 설계
 
 ## 설계 일반 
 
 ### [변화의 비용으로 설명하는 결합(coupling)과 응집(cohesion)](http://toby.epril.com/?p=727)
 
-이 글은 켄트벡이 응집도와 결합도를 비용 관점에서 설명한 내용에 토비 님의 생각을 곁들여 소개하는 글이다.
+켄트벡이 응집도와 결합도를 비용 관점에서 설명한 내용에 토비 님의 생각을 곁들여 소개하는 글.
 
 결합도란 두 개의 요소가 있을 때, 하나의 변경이 다른 쪽의 변경을 요구하는 정도. 즉, 결합도란 변경을 전파하는 정도로, 결합도가 높아지면 변경의 비용이 높아진다. 이에 반해 응집도란 시스템에 변경이 필요할 때 하나의 요소 내에서 변경이 전파되는 정도를 말한다. 한 가지를 변경할 때 전체가 바뀌면 응집도가 높고, 일부만 바뀐다면 응집도가 낮다고 한다.
 
 가만보니 두 용어가 설명하는 의존성의 범위가 다른 것 같다. 결합도는 전체 시스템 수준에서 서로 다른 책임과 책임간의 의존성을, 응집도는 하나의 클래스나 모듈 안에 담긴 책임들 간의 의존성을 설명한다. 이 지점에서 결합도와 응집도는 서로 상충하는 듯한 느낌을 준다. 응집도를 높이면 결합도가 높아지기 쉽고, 결합도를 낮추면 응집도가 높아지기 쉽기 때문이다. 그래서 본문에서도 이 둘 사이에서 밸런스를 유지하는 게 중요하다고 이야기한다.
 
-# 2. Rx와 리액티브 프로그래밍(2016)
+# 2. Rx와 리액티브 프로그래밍
 
-## 자료 정리
-
-### 리액티브 프로그래밍
+## 리액티브 프로그래밍
 - [리액티브 프로그래밍의 정의](https://en.wikipedia.org/wiki/Reactive_programming)
 - [데이터 플로우 프로그래밍의 정의](https://en.wikipedia.org/wiki/Dataflow_programming)
 - [On the development of reactive systems](http://dl.acm.org/citation.cfm?id=101990)
@@ -29,7 +40,7 @@
 
 	- > “Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation and location transparency.”
 
-### Rx(ReactiveX)
+## Rx(ReactiveX)
 
 - [Rx 공식 홈페이지](http://reactivex.io/intro.html)
 - [Erik Meijer and Wes Dyer - Reactive Framework (Rx) Under the Hood](https://channel9.msdn.com/Shows/Going+Deep/E2E-Erik-Meijer-and-Wes-Dyer-Reactive-Framework-Rx-Under-the-Hood-1-of-2)
@@ -50,7 +61,7 @@
 - [릴리즈 노트](https://blogs.msdn.microsoft.com/rxteam/2010/10/28/release-notes/)
 
 
-### RxJS
+## RxJS
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 	- cyclejs를 만든 Andre Staltz가 소개하는 RxJS
 	- 튜토리얼 형식으로 쉽게 접근할 수 있음.
@@ -58,7 +69,7 @@
 	- redux의 약점 중 하나가 액션 레이어에서의 비동기 처리인데 rx를 이용해서 만든 redux-observable이라는 미들웨에로 이 문제를 해결하는 방법을 소개
 
 
-### FRP
+## FRP
 
 * [Functional Reactive Animation by Conal Eliott and Paul Hudak](http://conal.net/papers/icfp97/)
     * FRP 개념이 처음으로 등장한 것으로 알려진 논문
@@ -84,7 +95,7 @@
     * Rx와 FRP의 차이도 간략하게 설명.
     * 한국어 버전이 곧 나올거라고 어디에서 들었다.
 
-### Rx vs FRP
+## Rx vs FRP
 
 * [Why I Cannot Say FRP But, I Just Did](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b#.qjt799iso)
     * FRP의 좁은 정의에 반대하는 cyclejs 개발자의 생각
@@ -96,6 +107,6 @@
 	- 에릭 마이어는, FRP와 Rx는 다르다는 걸 인정. FRP를 만든 Conal의 생각을 존중하며, Rx를 이용해서 현실의 문제를 해결할 수 있다면 용어는 중요하지 않다고 말함
 
 ## 김코딩 정리
-- [MS는 ReactiveX를 왜 만들었을까?](http://huns.me/development/2051)
-- [웹 프론트엔드 개발자의 얕고 넓은 Rx 이야기 by 김코딩](http://www.slideshare.net/jeokrang/rx-70197043)
+- [(글)MS는 ReactiveX를 왜 만들었을까?](http://huns.me/development/2051)
+- [(슬라이드와 동영상)웹 프론트엔드 개발자의 얕고 넓은 Rx 이야기](http://www.slideshare.net/jeokrang/rx-70197043)
 
