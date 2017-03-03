@@ -18,6 +18,12 @@
 - 소프트웨어를 둘러싼 환경 변화를 소개하고, 새로운 환경에 어울리는 소프트웨어 모델로 “메시지 주도” 방식의 설계를 적극 활용하자는 주장
 - “Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation and location transparency.”
 
+[What is Reactive Programming?](https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.y4pkewket)
+
+- 리액티브 프로그래밍의 등장 배경과 리액티브 메니페스토가 의미하는 바를 친절하게 설명하는 글
+
+
+
 ### Rx(ReactiveX)
 
 [Rx 공식 홈페이지](http://reactivex.io/intro.html)
